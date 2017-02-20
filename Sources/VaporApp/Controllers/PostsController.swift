@@ -1,7 +1,7 @@
 import Vapor
 import HTTP
 
-final class PostController: ResourceRepresentable {
+final class PostsController: ResourceRepresentable {
     func index(request: Request) throws -> ResponseRepresentable {
         return try Post.all().makeNode().converted(to: JSON.self)
     }

@@ -1,13 +1,9 @@
 import Vapor
+import VaporApp
 
 let drop = Droplet()
-
-drop.get { req in
-    return try drop.view.make("welcome", [
-    	"message": drop.localization[req.lang, "welcome", "title"]
-    ])
-}
-
-drop.resource("posts", PostController())
+let configuration = Configuration(viewRenderer: drop.view,
+                                  localization: drop.localization)
+configureRoutes(router: drop, configuration: configuration)
 
 drop.run()
