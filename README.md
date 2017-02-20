@@ -1,3 +1,5 @@
+[![Build Status](https://travis-ci.org/gtranchedone/vapor-testing-template.svg?branch=master)](https://travis-ci.org/gtranchedone/vapor-testing-template)
+
 # Vapor Testing Template
 
 A template for starting a new Vapor web application with testing in mind.
