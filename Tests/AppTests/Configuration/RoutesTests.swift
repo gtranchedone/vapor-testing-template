@@ -2,7 +2,7 @@ import HTTP
 import Vapor
 import XCTest
 
-@testable import VaporApp
+@testable import App
 
 class RoutesTests: XCTestCase {
     

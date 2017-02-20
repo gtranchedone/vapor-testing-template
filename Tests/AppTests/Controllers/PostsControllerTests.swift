@@ -1,6 +1,6 @@
 import XCTest
 
-@testable import VaporApp
+@testable import App
 
 class PostsControllerTests: XCTestCase {
     

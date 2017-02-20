@@ -1,5 +1,5 @@
 import Vapor
-import VaporApp
+import App
 
 let drop = Droplet()
 let configuration = Configuration(viewRenderer: drop.view,

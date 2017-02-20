@@ -1,7 +1,7 @@
 import Vapor
 import XCTest
 
-@testable import VaporApp
+@testable import App
 
 class PostTests: XCTestCase {
     
