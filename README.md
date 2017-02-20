@@ -12,6 +12,10 @@ vapor new 'MyApp' --template=https://github.com/gtranchedone/vapor-testing-templ
 
 Alternatively, you can simply clone this project and start working on your app. This template is actually a fully working Vapor application, although quite basic in functionality.
 
+## Running tests
+
+Once you've created a new app, you can run tests using `vapor test` or `swift test`. Both commands are equivalent at this point. See the example tests included with the template to get started.
+
 ## 📖 Vapor Documentation
 
 Visit the Vapor web framework's [documentation](http://docs.vapor.codes) for instructions on how to build a web application using this template.
