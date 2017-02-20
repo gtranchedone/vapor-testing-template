@@ -1,4 +1,5 @@
 import XCTest
+@testable import AppTests
 
 XCTMain([
     testCase(RoutesTests.allTests),
