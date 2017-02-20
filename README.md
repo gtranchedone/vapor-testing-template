@@ -1,10 +1,10 @@
-# Basic Template
+# Vapor Testing Template
 
-A basic vapor template for starting a new Vapor web application. If you're using vapor toolbox, you can use: `vapor new --template=basic`
+A template for starting a new Vapor web application with testing in mind. If you're using vapor toolbox, you can use: `vapor new 'MyApp' --template=https://github.com/gtranchedone/vapor-testing-template`
 
 ## 📖 Documentation
 
-Visit the Vapor web framework's [documentation](http://docs.vapor.codes) for instructions on how to use this package.
+Visit the Vapor web framework's [documentation](http://docs.vapor.codes) for instructions on how to build a web application using this template.
 
 ## 💧 Community
 
