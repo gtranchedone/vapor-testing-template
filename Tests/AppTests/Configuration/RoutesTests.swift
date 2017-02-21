@@ -1,7 +1,7 @@
 import HTTP
-import Vapor
 import XCTest
 
+@testable import Vapor
 @testable import App
 
 class RoutesTests: XCTestCase {
@@ -18,8 +18,7 @@ class RoutesTests: XCTestCase {
     override func setUp() {
         super.setUp()
         mockDroplet = MockDroplet()
-        let fileManager = FileManager.default
-        let rootDirectory = fileManager.currentDirectoryPath
+        let rootDirectory = Droplet.workingDirectory(from: [])
         let viewsDir = rootDirectory + "/Resources/Views"
         let viewRenderer = LeafRenderer(viewsDir: viewsDir)
         let localizationDirectory = rootDirectory + "/Localization"
