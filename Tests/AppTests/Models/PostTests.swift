@@ -1,18 +1,21 @@
-import Vapor
 import XCTest
-
 @testable import App
 
-class PostTests: XCTestCase {
+class PostTests: VaporTestCase {
     
-    static var allTests : [(String, (PostTests) -> () throws -> Void)] {
-        return [
-            ("testExample", testExample),
-        ]
+    static let allTests = [
+        ("testExample", testExample),
+        ("testExampleThatThrows", testExampleThatThrows)
+    ]
+    
+    func testExample() {
+        XCTAssertTrue(true)
     }
     
-    func testExample() throws {
-        XCTAssertTrue(true)
+    func testExampleThatThrows() throws {
+        perform {
+            XCTAssertTrue(true)
+        }
     }
     
 }
